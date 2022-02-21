@@ -30,10 +30,27 @@ let Essenplan = [
 "Würstchen mit Kartoffelsalat",
 "Pfannkuchen",
 "Pfannkuchen",
+"Pommesauflauf",
+"Gyros",
+"Gemüseauflauf",
+"Spargelauflauf",
+"Balkanbemme",
+"Sandwichburger",
+"Sandwich",
+"Kartoffelpuffer",
+"Gehacktesstippe",
+"Pilzpfanne",
+"Lasagne",
+"Jagdwurst",
+"Spinat",
+"Chili Con Carne",
+"Käsesuppe",
+"Schaschlick",
+"Paprikaschote"
 ]
 
 function eat(){
-   let Montag = Math.random() *30;
+   let Montag = Math.random() *47;
    let Montag1 = Math.round(Montag);
    let Dienstag = Math.random() *30;
    let Dienstag1 = Math.round(Dienstag);
