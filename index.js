@@ -46,11 +46,12 @@ let Essenplan = [
 "Chili Con Carne",
 "Käsesuppe",
 "Schaschlick",
-"Paprikaschote"
+"Paprikaschote",
+ "Pesto mit Nudeln"
 ]
 
 function eat(){
-   let Montag = Math.random() *47;
+   let Montag = Math.random() *48;
    let Montag1 = Math.round(Montag);
    let Dienstag = Math.random() *30;
    let Dienstag1 = Math.round(Dienstag);
