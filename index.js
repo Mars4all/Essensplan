@@ -17,7 +17,7 @@ $(document).ready(function() {
    $("#Essen5row5").hide();
    $("#Essen6row6").hide();
    $("#Essen7row7").hide();
-
+let liste = 50;
 let Essenplan = [
 "Frikasse",
  "Wrap",
@@ -49,7 +49,6 @@ let Essenplan = [
 "selbstgemachtes Subway",
 "Würstchen mit Kartoffelsalat",
 "Pfannkuchen",
-"Pfannkuchen",
 "Pommesauflauf",
 "Gyros",
 "Gemüseauflauf",
@@ -67,23 +66,27 @@ let Essenplan = [
 "Käsesuppe",
 "Schaschlick",
 "Paprikaschote",
- "Pesto mit Nudeln"
+ "Pesto mit Nudeln",
+ "Fertiggericht Tiefkühl",
+ "Parmesan Kartoffeln nach Tik Tok Art",
+"Aufgeräumter Kühlschrank"
+
 ]
 
 
-   let Montag = Math.random() *48;
+   let Montag = Math.random() *liste;
    let Montag1 = Math.round(Montag);
-   let Dienstag = Math.random() *48;
+   let Dienstag = Math.random() *liste;
    let Dienstag1 = Math.round(Dienstag);
-   let Mittwoch = Math.random() *48;
+   let Mittwoch = Math.random() *liste;
    let Mittwoch1 = Math.round(Mittwoch);
-   let Donnerstag = Math.random() *48;
+   let Donnerstag = Math.random() *liste;
    let Donnerstag1 = Math.round(Donnerstag);
-   let Freitag = Math.random() *48;
+   let Freitag = Math.random() *liste;
    let Freitag1 = Math.round(Freitag);
-   let Samstag = Math.random() *48;
+   let Samstag = Math.random() *liste;
    let Samstag1 = Math.round(Samstag);
-   let Sonntag = Math.random() *48;
+   let Sonntag = Math.random() *liste;
    let Sonntag1 =  Math.round(Sonntag);
    let Woche =[Montag1, Dienstag1, Mittwoch1, Donnerstag1, Freitag1, Samstag1, Sonntag1]
 
@@ -111,19 +114,19 @@ $("#Essenmachen").mouseup(function() {
           
           {
        
-       Montag = Math.random() *48;
+       Montag = Math.random() *liste;
        Montag1 = Math.round(Montag);
-       Dienstag = Math.random() *48;
+       Dienstag = Math.random() *liste;
        Dienstag1 = Math.round(Dienstag);
-       Mittwoch = Math.random() *48;
+       Mittwoch = Math.random() *liste;
        Mittwoch1 = Math.round(Mittwoch);
-       Donnerstag = Math.random() *48;
+       Donnerstag = Math.random() *liste;
        Donnerstag1 = Math.round(Donnerstag);
-       Freitag = Math.random() *48;
+       Freitag = Math.random() *liste;
        Freitag1 = Math.round(Freitag);
-       Samstag = Math.random() *48;
+       Samstag = Math.random() *liste;
        Samstag1 = Math.round(Samstag);
-       Sonntag = Math.random() *48;
+       Sonntag = Math.random() *liste;
        Sonntag1 =  Math.round(Sonntag);
 
    }
