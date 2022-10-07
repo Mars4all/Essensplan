@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(48, 39, 39);
+}
+h1{
+    padding: 5%;
+    text-align: center;
+    color: rgb(216, 196, 169);
+    
+}
+.Schrift{
+    font-style: italic;
+    color: rgb(216, 196, 169);
+}
+.center{
+    text-align: center;
+}
+.Abstand{
+    margin: 5rem;
+    padding: 5%;
+    background-color: rgb(97, 150, 150);
+}
