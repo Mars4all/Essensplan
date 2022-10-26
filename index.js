@@ -17,7 +17,7 @@ $(document).ready(function() {
    $("#Essen5row5").hide();
    $("#Essen6row6").hide();
    $("#Essen7row7").hide();
-let liste = 50;
+let liste = 49;
 let Essenplan = [
 "Frikasse",
  "Wrap",
@@ -48,7 +48,6 @@ let Essenplan = [
 "Tessapfanne",
 "selbstgemachtes Subway",
 "Würstchen mit Kartoffelsalat",
-"Pfannkuchen",
 "Pommesauflauf",
 "Gyros",
 "Gemüseauflauf",
