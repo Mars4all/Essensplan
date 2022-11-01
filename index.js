@@ -19,13 +19,23 @@ $(document).ready(function() {
    $("#Essen7row7").hide();
 
    /// neu generieren ausblenden
-   $("#neu1").hide();
    $("#neu2").hide();
    $("#neu3").hide();
    $("#neu4").hide();
    $("#neu5").hide();
    $("#neu6").hide();
    $("#neu7").hide();
+
+   // Essensplan ausblenden
+   $("#Plan").hide();
+   $("#Plan1").hide();
+   $("#Plan2").hide();
+   $("#Plan3").hide();
+   $("#Plan4").hide();
+   $("#Plan5").hide();
+   $("#Plan6").hide();
+   $("#Plan7").hide();
+
 
 
 let liste = 49;
@@ -83,6 +93,60 @@ let Essenplan = [
 
 ]
 
+let Einkaufszettel = [
+   "Frikasse und Kartoffel",
+    "Wrap Fleisch und Salat sowie So0e",
+    "Taco Fleisch und alat sowie Soße",
+    "Döner",
+    " Kartoffeln",
+   "Salat und Hähnchen",
+    "gehacktes mit Kartoffeln",
+   "Suppe",
+    "Kassler mit Kartoffeln Soße und Beilage",
+   "Königsberger und Kartoffeln",
+    "Nudeln und Tomatensoße",
+   "Nudeln Gemüse und Käse",
+   "Yammi Salat und Fleisch",
+   "Gulasch und Nudeln",
+   "Gulasch und Kartoffeln sowie Pilze",
+   "Klöße mit Hähnchen, Soße und Rotkohl",
+   "Quark, Käse Eis, Tomatenmark, Wurst und Käse",
+   "Quark, Käse, Eis, Senf und Ketchup, Gechacktes und Zwiebeln",
+   "Blumenkohl Grießbrei Googeln",
+   "Fleisch",
+   "Ei, Milch, Mehl",
+   "Schnitzel, Kartoffeln, Soße",
+   "Bockwurst, Pommes, Curry Soße und Pommes Soße",
+   "Gehacktes, Kartoffeln und Soße",
+   "Asiatische Nudeln und Soße",
+   "Reis , Gemüse und evtl Fleisch",
+   "versch. Gemüse und Fetakäse",
+   "Buguette, Baguette Soße Wurst, Salat Soße ",
+   "Würstchen und Kartoffelsalat",
+   "Pommes , Kartoffel mal anders und Käse",
+   "Gyros und Pommes",
+   "Gemüse , Holondaise und Köse",
+   "Spargelauflauf Holondaise und Käse",
+   "Gehacktes und Brot",
+   "Sandwich, Gehacktes, Salat und Hamburgersoße",
+   "Sandwich Salat, Sandwichs0ße und Wurst",
+   "Kartoffel Zwiebel, Mehl und Zucker",
+   "Gehacktes, Soße und Kartoffeln",
+   "Pilz, Milche und Zwiebeln , Kartoffeln",
+   "Lasagne",
+   "Jagdwurst , Kartoffelbrei, Zwiebeln",
+   "Spinat, Ei und Kartoffeln",
+   "Chili Soße, Reis, Gehacktes und Mais",
+   "Käsesuppe",
+   "Fleisch , Spieße, Paprika und Zwiebeln",
+   "Paprika, Gehacktes, Kartoffeln, Soße",
+    "Pesto mit Nudeln",
+    "Fertiggericht Tiefkühl",
+    "Parmesan Kartoffeln nach Tik Tok Art",
+   "Aufgeräumter Kühlschrank"
+   
+   ]
+
 
    let Montag = Math.random() *liste;
    let Montag1 = Math.round(Montag);
@@ -104,7 +168,7 @@ let Essenplan = [
    
 
 
-$("#Essenmachen").mouseup(function() {
+$("#Essenmachen").mouseup(function sortessen() {
 
    //// Vermeidung von einer Doppelten Speise
 
@@ -155,6 +219,16 @@ $("#Essenmachen").mouseup(function() {
    $("#Essen7").html(Essenplan[Sonntag1]);
 
 
+ ///// Hier wird der Einkaufszettel Dargestellt
+
+   $("#Plan1").html(Einkaufszettel[Montag1]);
+   $("#Plan2").html(Einkaufszettel[Dienstag1]);
+   $("#Plan3").html(Einkaufszettel[Mittwoch1]);
+   $("#Plan4").html(Einkaufszettel[Donnerstag1]);
+   $("#Plan5").html(Einkaufszettel[Freitag1]);
+   $("#Plan6").html(Einkaufszettel[Samstag1]);
+   $("#Plan7").html(Einkaufszettel[Sonntag1]);
+
 
 
    /////// Tabelle mit Speisen erscheinen lassen
@@ -176,13 +250,22 @@ $("#Essenmachen").mouseup(function() {
 
 
    /// neu generieren einblenden
-   $("#neu1").show();
    $("#neu2").show();
    $("#neu3").show();
    $("#neu4").show();
    $("#neu5").show();
    $("#neu6").show();
    $("#neu7").show();
+
+ /// Einkaufszettel einblenden
+   $("#Plan").show();
+   $("#Plan1").show();
+   $("#Plan2").show();
+   $("#Plan3").show();
+   $("#Plan4").show();
+   $("#Plan5").show();
+   $("#Plan6").show();
+   $("#Plan7").show();
 
    //// neuer Button erscheint
    $("#Essenmachen2").show();
@@ -195,9 +278,12 @@ $("#Essenmachen").mouseup(function() {
 
          $("#neu1").mouseup(function() 
          {
+          
             Montag = Math.random() *liste;
             Montag1 = Math.round(Montag);
-            $("#Essen1").html(Essenplan[Montag1]);
+            $("#Essen1").html(Essenplan[ Montag1]);
+            $("#Plan1").html(Einkaufszettel[Montag1]);
+            
          });
 
          $("#neu2").mouseup(function() 
@@ -205,6 +291,7 @@ $("#Essenmachen").mouseup(function() {
             Dienstag = Math.random() *liste;
             Dienstag1 = Math.round(Dienstag);
             $("#Essen2").html(Essenplan[Dienstag1]);
+            $("#Plan2").html(Einkaufszettel[Dienstag1]);
          });
 
          $("#neu3").mouseup(function() 
@@ -212,6 +299,7 @@ $("#Essenmachen").mouseup(function() {
             Mittwoch = Math.random() *liste;
             Mittwoch1 = Math.round(Mittwoch);
             $("#Essen3").html(Essenplan[Mittwoch1]);
+            $("#Plan3").html(Einkaufszettel[Mittwoch1]);
          });
 
          $("#neu4").mouseup(function() 
@@ -219,6 +307,7 @@ $("#Essenmachen").mouseup(function() {
             Donnerstag = Math.random() *liste;
             Donnerstag1 = Math.round(Donnerstag);
             $("#Essen4").html(Essenplan[Donnerstag1]);
+            $("#Plan4").html(Einkaufszettel[Donnerstag1]);
          });
 
          $("#neu5").mouseup(function() 
@@ -226,6 +315,7 @@ $("#Essenmachen").mouseup(function() {
             Freitag = Math.random() *liste;
             Freitag1 = Math.round(Freitag);
             $("#Essen5").html(Essenplan[Freitag1]);
+            $("#Plan5").html(Einkaufszettel[Freitag1]);
          });
 
          $("#neu6").mouseup(function() 
@@ -233,6 +323,7 @@ $("#Essenmachen").mouseup(function() {
             Samstag = Math.random() *liste;
             Samstag1 = Math.round(Samstag);
             $("#Essen6").html(Essenplan[Samstag1]);
+            $("#Plan6").html(Einkaufszettel[Samstag1]);
          });
 
          $("#neu7").mouseup(function() 
@@ -242,6 +333,7 @@ $("#Essenmachen").mouseup(function() {
             Sonntag = Math.random() *liste;
             Sonntag1 =  Math.round(Sonntag);
             $("#Essen7").html(Essenplan[Sonntag1]);
+            $("#Plan7").html(Einkaufszettel[Sonntag1]);
          
          });
 
@@ -256,7 +348,7 @@ $("#Essenmachen").mouseup(function() {
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
-$("#Essenmachen2").mouseup(function() {
+$("#Essenmachen2").mouseup(function (){
 
    while (Montag1 == Dienstag1 && Dienstag1 == Mittwoch1 && Mittwoch1 == Donnerstag1 && Donnerstag1 == Freitag1 && Freitag1 == Samstag1
          
@@ -274,22 +366,9 @@ $("#Essenmachen2").mouseup(function() {
       
       {
    
-   Montag = Math.random() *liste;
-   Montag1 = Math.round(Montag);
-   Dienstag = Math.random() *liste;
-   Dienstag1 = Math.round(Dienstag);
-   Mittwoch = Math.random() *liste;
-   Mittwoch1 = Math.round(Mittwoch);
-   Donnerstag = Math.random() *liste;
-   Donnerstag1 = Math.round(Donnerstag);
-   Freitag = Math.random() *liste;
-   Freitag1 = Math.round(Freitag);
-   Samstag = Math.random() *liste;
-   Samstag1 = Math.round(Samstag);
-   Sonntag = Math.random() *liste;
-   Sonntag1 =  Math.round(Sonntag);
-
-
+   x = Math.random() *liste;
+   x1 = Math.round(x);
+  
 
 
 }
