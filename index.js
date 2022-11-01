@@ -17,6 +17,17 @@ $(document).ready(function() {
    $("#Essen5row5").hide();
    $("#Essen6row6").hide();
    $("#Essen7row7").hide();
+
+   /// neu generieren ausblenden
+   $("#neu1").hide();
+   $("#neu2").hide();
+   $("#neu3").hide();
+   $("#neu4").hide();
+   $("#neu5").hide();
+   $("#neu6").hide();
+   $("#neu7").hide();
+
+
 let liste = 49;
 let Essenplan = [
 "Frikasse",
@@ -163,14 +174,87 @@ $("#Essenmachen").mouseup(function() {
    $("#Essen6row6").show();
    $("#Essen7row7").show();
 
+
+   /// neu generieren einblenden
+   $("#neu1").show();
+   $("#neu2").show();
+   $("#neu3").show();
+   $("#neu4").show();
+   $("#neu5").show();
+   $("#neu6").show();
+   $("#neu7").show();
+
    //// neuer Button erscheint
    $("#Essenmachen2").show();
+
+
+
+        
+ /// einzelne Gerichte neu erstellen
+         //////////////////////////////////////////////////////////////////////////////////////
+
+         $("#neu1").mouseup(function() 
+         {
+            Montag = Math.random() *liste;
+            Montag1 = Math.round(Montag);
+            $("#Essen1").html(Essenplan[Montag1]);
+         });
+
+         $("#neu2").mouseup(function() 
+         {
+            Dienstag = Math.random() *liste;
+            Dienstag1 = Math.round(Dienstag);
+            $("#Essen2").html(Essenplan[Dienstag1]);
+         });
+
+         $("#neu3").mouseup(function() 
+         {
+            Mittwoch = Math.random() *liste;
+            Mittwoch1 = Math.round(Mittwoch);
+            $("#Essen3").html(Essenplan[Mittwoch1]);
+         });
+
+         $("#neu4").mouseup(function() 
+         {
+            Donnerstag = Math.random() *liste;
+            Donnerstag1 = Math.round(Donnerstag);
+            $("#Essen4").html(Essenplan[Donnerstag1]);
+         });
+
+         $("#neu5").mouseup(function() 
+         {
+            Freitag = Math.random() *liste;
+            Freitag1 = Math.round(Freitag);
+            $("#Essen5").html(Essenplan[Freitag1]);
+         });
+
+         $("#neu6").mouseup(function() 
+         {
+            Samstag = Math.random() *liste;
+            Samstag1 = Math.round(Samstag);
+            $("#Essen6").html(Essenplan[Samstag1]);
+         });
+
+         $("#neu7").mouseup(function() 
+         {
+
+
+            Sonntag = Math.random() *liste;
+            Sonntag1 =  Math.round(Sonntag);
+            $("#Essen7").html(Essenplan[Sonntag1]);
+         
+         });
+
     }
 
 
    
 
 });
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////
 
 $("#Essenmachen2").mouseup(function() {
 
@@ -190,23 +274,27 @@ $("#Essenmachen2").mouseup(function() {
       
       {
    
-   Montag = Math.random() *48;
+   Montag = Math.random() *liste;
    Montag1 = Math.round(Montag);
-   Dienstag = Math.random() *48;
+   Dienstag = Math.random() *liste;
    Dienstag1 = Math.round(Dienstag);
-   Mittwoch = Math.random() *48;
+   Mittwoch = Math.random() *liste;
    Mittwoch1 = Math.round(Mittwoch);
-   Donnerstag = Math.random() *48;
+   Donnerstag = Math.random() *liste;
    Donnerstag1 = Math.round(Donnerstag);
-   Freitag = Math.random() *48;
+   Freitag = Math.random() *liste;
    Freitag1 = Math.round(Freitag);
-   Samstag = Math.random() *48;
+   Samstag = Math.random() *liste;
    Samstag1 = Math.round(Samstag);
-   Sonntag = Math.random() *48;
+   Sonntag = Math.random() *liste;
    Sonntag1 =  Math.round(Sonntag);
+
+
+
 
 }
 derPlan();
+derPlaneinzeln();
 
 $("#Essenmachen").html("Erstelle noch einen Plan!")
 });
