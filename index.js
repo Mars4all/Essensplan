@@ -97,53 +97,53 @@ let Essenplan = [
 let Einkaufszettel = [
    "Frikasse und Kartoffel",
     "Wrap Fleisch und Salat sowie So0e",
-    "Taco Fleisch und alat sowie Soße",
+    "Taco Fleisch und Salat sowie Soße",
     "Döner",
     " Kartoffeln",
    "Salat und Hähnchen",
-    "gehacktes mit Kartoffeln",
+    "Gehacktes mit Kartoffeln",
    "Suppe",
     "Kassler mit Kartoffeln Soße und Beilage",
    "Königsberger und Kartoffeln",
-    "Nudeln und Tomatensoße",
+    "Nudeln und Tomatensoße und Würstchen",
    "Nudeln Gemüse und Käse",
-   "Yammi Salat und Fleisch",
-   "Gulasch und Nudeln",
+   "Yammi Salat , Fleisch, Chinakohl, Pinienkerne",
+   "Gulasch und Nudeln sowie Pilze",
    "Gulasch und Kartoffeln sowie Pilze",
    "Klöße mit Hähnchen, Soße und Rotkohl",
    "Quark, Käse Eis, Tomatenmark, Wurst und Käse",
    "Quark, Käse, Eis, Senf und Ketchup, Gechacktes und Zwiebeln",
    "Blumenkohl Grießbrei Googeln",
-   "Fleisch",
-   "Ei, Milch, Mehl",
-   "Schnitzel, Kartoffeln, Soße",
+   "Fleisch zum Grillen, Grillsoße",
+   "Ei, Milch, Mehl, Backpulver",
+   "Schnitzel, Kartoffeln, Soße, Beilage",
    "Bockwurst, Pommes, Curry Soße und Pommes Soße",
    "Gehacktes, Kartoffeln und Soße",
-   "Asiatische Nudeln und Soße",
+   "Asiatische Nudeln und Soße, oder Reis",
    "Reis , Gemüse und evtl Fleisch",
    "versch. Gemüse und Fetakäse",
-   "Buguette, Baguette Soße Wurst, Salat Soße ",
+   "Buguette, Käse, Wurst, Salat Soße ",
    "Würstchen und Kartoffelsalat",
    "Pommes , Kartoffel mal anders und Käse",
-   "Gyros und Pommes",
+   "Gyros, Pommes, Krautsalat",
    "Gemüse , Holondaise und Köse",
    "Spargelauflauf Holondaise und Käse",
    "Gehacktes und Brot",
    "Sandwich, Gehacktes, Salat und Hamburgersoße",
    "Sandwich Salat, Sandwichs0ße und Wurst",
-   "Kartoffel Zwiebel, Mehl und Zucker",
+   "Kartoffel Zwiebel, Mehl, Zucker und Eier",
    "Gehacktes, Soße und Kartoffeln",
-   "Pilz, Milche und Zwiebeln , Kartoffeln",
+   "Pilz, Milch und Zwiebeln , Kartoffeln",
    "Lasagne",
    "Jagdwurst , Kartoffelbrei, Zwiebeln",
    "Spinat, Ei und Kartoffeln",
-   "Chili Soße, Reis, Gehacktes und Mais",
-   "Käsesuppe",
+   "Chili Soße, Reis, Gehacktes und Mais (evtl. Kidney Bohnen)",
+   "Lauch, Zwiebel, Knoblauch, Rapsöl, 250g gem. Hach, Gemüsebrühe, Schmelzkäse (Sahne und Kräuter), Schnittlauch",
    "Fleisch , Spieße, Paprika und Zwiebeln",
    "Paprika, Gehacktes, Kartoffeln, Soße",
-    "Pesto mit Nudeln",
+    "Pesto, Nudeln, Pinienkerne",
     "Fertiggericht Tiefkühl",
-    "Parmesan Kartoffeln nach Tik Tok Art",
+    "Parmesan, Kartoffeln, Knoblauch, Pflanzenöl, Pfeffer, Sour Cream ",
    "Aufgeräumter Kühlschrank"
    
    ]
@@ -260,13 +260,13 @@ $("#Essenmachen").mouseup(function sortessen() {
 
  /// Einkaufszettel einblenden
    $("#Plan").show();
-   $("#Plan1").show();
+   /*$("#Plan1").show();
    $("#Plan2").show();
    $("#Plan3").show();
    $("#Plan4").show();
    $("#Plan5").show();
    $("#Plan6").show();
-   $("#Plan7").show();
+   $("#Plan7").show();*/
 
    //// neuer Button erscheint
    $("#Essenmachen2").show();
@@ -341,49 +341,7 @@ $("#Essenmachen").mouseup(function sortessen() {
          //////////////// Einkaufsliste entfernen
 
          
-
-         $("#del1").mouseup(function() 
-         {
-          
-            $("#Plan1").html("");
-            
-         });
-
-         $("#del2").mouseup(function() 
-         {
-           
-            $("#Plan2").html("");
-         });
-
-         $("#del3").mouseup(function() 
-         {
-          
-            $("#Plan3").html("");
-         });
-
-         $("#del4").mouseup(function() 
-         {
-          
-            $("#Plan4").html("");
-         });
-
-         $("#del5").mouseup(function() 
-         {
-           
-            $("#Plan5").html("");
-         });
-
-         $("#del6").mouseup(function() 
-         {
-          
-            $("#Plan6").html("");
-         });
-
-         $("#del7").mouseup(function() 
-         {
-            $("#Plan7").html("");
-         
-         });
+      deletehide();
 
     }
 
@@ -425,4 +383,70 @@ derPlaneinzeln();
 
 $("#Essenmachen").html("Erstelle noch einen Plan!")
 });
+
+
+//////////////// Funktionen
+
+function deletehide() {
+
+   
+
+   $("#del1").mouseup(function() 
+   {
+     
+      $("#delhide1").hide();
+   });
+
+   $("#del2").mouseup(function() 
+   {
+      
+      $("#delhide2").hide();
+
+   });
+
+   $("#del3").mouseup(function() 
+   {
+     
+      $("#delhide3").hide();
+   });
+
+   $("#del4").mouseup(function() 
+   {
+      
+      $("#delhide4").hide();
+   });
+
+   $("#del5").mouseup(function() 
+   {
+     
+      $("#delhide5").hide();
+   });
+
+   $("#del6").mouseup(function() 
+   {
+      $("#delhide6").hide();
+   });
+
+   $("#del7").mouseup(function() 
+   {
+      $("#delhide7").hide();
+   
+   });
+}
+forS ();
+function forS (){
+   
+   
+   var i = 1; 
+   let length = Essenplan.length;
+   for ( i; i <= 7; i++) {console.log(Essenplan[i]);
+      
+      $("#Plan"+i).show();
+   }
+
+   
+
+}
+
+
 });
