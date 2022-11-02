@@ -39,6 +39,7 @@ $(document).ready(function() {
 
 
 let liste = 49;
+
 let Essenplan = [
 "Frikasse",
  "Wrap",
@@ -334,6 +335,53 @@ $("#Essenmachen").mouseup(function sortessen() {
             Sonntag1 =  Math.round(Sonntag);
             $("#Essen7").html(Essenplan[Sonntag1]);
             $("#Plan7").html(Einkaufszettel[Sonntag1]);
+         
+         });
+
+         //////////////// Einkaufsliste entfernen
+
+         
+
+         $("#del1").mouseup(function() 
+         {
+          
+            $("#Plan1").html("");
+            
+         });
+
+         $("#del2").mouseup(function() 
+         {
+           
+            $("#Plan2").html("");
+         });
+
+         $("#del3").mouseup(function() 
+         {
+          
+            $("#Plan3").html("");
+         });
+
+         $("#del4").mouseup(function() 
+         {
+          
+            $("#Plan4").html("");
+         });
+
+         $("#del5").mouseup(function() 
+         {
+           
+            $("#Plan5").html("");
+         });
+
+         $("#del6").mouseup(function() 
+         {
+          
+            $("#Plan6").html("");
+         });
+
+         $("#del7").mouseup(function() 
+         {
+            $("#Plan7").html("");
          
          });
 
