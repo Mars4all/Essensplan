@@ -36,6 +36,8 @@ $(document).ready(function() {
    $("#Plan6").hide();
    $("#Plan7").hide();
 
+   // Selbst ergänzen ausblenden
+  
 
 
 let liste = 49;
@@ -442,11 +444,53 @@ function forS (){
    for ( i; i <= 7; i++) {console.log(Essenplan[i]);
       
       $("#Plan"+i).show();
+      
    }
 
    
 
 }
+////////////////////////////////////////////////////////////////////////////////////77
+//// Einkaufszettel.html
+let counter = 1;
+let counter1 = 2; 
+
+let Essensliste = []
+
+      var j = 1; 
+         let length = Essenplan.length;
+         for ( j; j <= 25; j++) {;
+       /// Liste Einkaufszettel ausblenden     
+      $("#EPlan"+j).hide();
+      
+   }
+
+$("#button-addon2").mouseup(function() 
+   {
+      
+      ////console.log(counter);
+      let Antwort1 = $("#input").val();
+      Essensliste.unshift(Antwort1);
+      $("#EPlan"+counter).html(Antwort1);
+      $("#EPlan"+counter).show();
+      $("#input").hide();
+      $("#input").show();
+
+      var i = 0; 
+      let length = Essenplan.length;
+      for ( i; i <= counter; i++) {
+         
+         console.log(Essensliste);
+         
+      }
+
+      counter1++;
+      counter++;
+      
+   });
+
+   
 
 
+   
 });
