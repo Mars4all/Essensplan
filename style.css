@@ -19,3 +19,15 @@ h1{
     padding: 5%;
     background-color: rgb(97, 150, 150);
 }
+#breiteinput{
+    position: absolute;
+    
+
+    width: 100%;
+    
+}
+
+.schriftg{
+    font-style: italic;
+}
+
