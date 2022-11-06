@@ -118,7 +118,7 @@ let Einkaufszettel = [
    "Blumenkohl Grießbrei Googeln",
    "Fleisch zum Grillen, Grillsoße",
    "Ei, Milch, Mehl, Backpulver",
-   "Schnitzel, Kartoffeln, Soße, Beilage",
+   "Schnitzel, Kartoffeln, Soße, Beilage (evtl Ei und Semmelbrösel)",
    "Bockwurst, Pommes, Curry Soße und Pommes Soße",
    "Gehacktes, Kartoffeln und Soße",
    "Asiatische Nudeln und Soße, oder Reis",
@@ -354,8 +354,7 @@ $("#Essenmachen").mouseup(function sortessen() {
 
 
 
-///////////////////////////////////////////////////////////////////////////////////////
-
+////////////// Essenplan erstellen
 $("#Essenmachen2").mouseup(function (){
 
    while (Montag1 == Dienstag1 && Dienstag1 == Mittwoch1 && Mittwoch1 == Donnerstag1 && Donnerstag1 == Freitag1 && Freitag1 == Samstag1
@@ -387,8 +386,7 @@ $("#Essenmachen").html("Erstelle noch einen Plan!")
 });
 
 
-//////////////// Funktionen
-
+//////////////// einzelne Zeile löschen
 function deletehide() {
 
    
@@ -454,12 +452,13 @@ function forS (){
 //// Einkaufszettel.html
 let counter = 1;
 let counter1 = 2; 
+let mengeliste = 37
 
 let Essensliste = []
 
       var j = 1; 
          let length = Essenplan.length;
-         for ( j; j <= 25; j++) {;
+         for ( j; j <= mengeliste; j++) {;
        /// Liste Einkaufszettel ausblenden     
       $("#EPlan"+j).hide();
       
