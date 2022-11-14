@@ -125,28 +125,28 @@ Edeka = liste[4];
 
 function Daten_uebermittelnaldi(){
     $(".Aldi").html(" Aldi <br> Testkauf Ergbebnis");
-    $("#Adel").html( Aldi +"€.");
+    $("#Adel").html( Aldi +"€");
 }
 
 function Daten_uebermittelnedeka(){
     $("#Edeka").html(" Edeka <br>  Testkauf Ergbebnis" );
-    $("#Edel").html(Edeka +"€.");
+    $("#Edel").html(Edeka +"€");
 }
 
 function Daten_uebermittelnREWE(){
     $("#REWE").html(" REWE <br> Testkauf Ergbebnis ");
-    $("#Rdel").html( REWE+"€.");
+    $("#Rdel").html( REWE+"€");
 }
 
 function Daten_uebermittelnKaufland(){
     $("#Kaufland").html(" Kaufland <br> Testkauf Ergbebnis");
-    $("#Kdel").html(Kaufland +"€.");
+    $("#Kdel").html(Kaufland +"€");
     
 }
 
 function Daten_uebermittelnLidl(){
     $("#Lidl").html(" Lidl <br> Testkauf Ergbebnis");
-    $("#Ldel").html( Lidl+"€.");
+    $("#Ldel").html( Lidl+"€");
 }
 
 function Preisvergleich() {
