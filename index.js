@@ -40,7 +40,7 @@ $(document).ready(function() {
   
 
 
-let liste = 51;
+let liste = 50;
 
 let Essenplan = [
 "Frikasse",
