@@ -40,7 +40,7 @@ $(document).ready(function() {
   
 
 
-let liste = 49;
+let liste = 51;
 
 let Essenplan = [
 "Frikasse",
@@ -92,7 +92,8 @@ let Essenplan = [
  "Pesto mit Nudeln",
  "Fertiggericht Tiefkühl",
  "Parmesan Kartoffeln nach Tik Tok Art",
-"Aufgeräumter Kühlschrank"
+"Aufgeräumter Kühlschrank",
+"Leberkäse"
 
 ]
 
@@ -146,7 +147,8 @@ let Einkaufszettel = [
     "Pesto, Nudeln, Pinienkerne",
     "Fertiggericht Tiefkühl",
     "Parmesan, Kartoffeln, Knoblauch, Pflanzenöl, Pfeffer, Sour Cream ",
-   "Aufgeräumter Kühlschrank"
+   "Aufgeräumter Kühlschrank",
+   "Leberkäse, Kartoffeln und Beilage"
    
    ]
 
