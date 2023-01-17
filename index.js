@@ -95,9 +95,7 @@ let Essenplan = [
 "Aufgeräumter Kühlschrank",
 "Leberkäse",
  "Schichtkohl",
- "Pulled Pork",
- "Sandwichburger"
-
+ "Pulled Pork"
 ]
 
 let Einkaufszettel = [
@@ -153,8 +151,7 @@ let Einkaufszettel = [
    "Aufgeräumter Kühlschrank",
    "Leberkäse, Kartoffeln und Beilage",
    "Gehacktes, Kohl, Soße, Kartoffeln",
-   "Pulled Pork, Baguette",
-   "Toast, Gehacktes, Ei , Semmelbrösel, Tomate, Gurke, evtl Käse und Soße"
+   "Pulled Pork, Baguette"
    
    ]
 
