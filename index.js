@@ -40,7 +40,7 @@ $(document).ready(function() {
   
 
 
-let liste = 52;
+let liste = 62;
 
 let Essenplan = [
 "Frikasse",
@@ -95,7 +95,17 @@ let Essenplan = [
 "Aufgeräumter Kühlschrank",
 "Leberkäse",
  "Schichtkohl",
- "Pulled Pork"
+ "Pulled Pork",
+ "TM Käsesupper",
+ "TM Kartoffelsupper",
+ "TM Paprika Hänchengeschnetzeltes mit Nudeln",
+ "TM Kartoffelpuffer",
+ "TM Königsberger Klöpse",
+ "TM Frikasse",
+ "TM Chinesische Nudeln",
+ "TM Pute mit Rahmkartoffeln",
+ "TM Putenfilet mit Pfirsichchili und Reis",
+ "TM Langost"
 ]
 
 let Einkaufszettel = [
@@ -151,8 +161,17 @@ let Einkaufszettel = [
    "Aufgeräumter Kühlschrank",
    "Leberkäse, Kartoffeln und Beilage",
    "Gehacktes, Kohl, Soße, Kartoffeln",
-   "Pulled Pork, Baguette"
-   
+   "Pulled Pork, Baguette",
+   "Knoblauch, Öl, Hackfleisch,Porree,Gemüsebrühe,Schmand,Kräterschmelzkäse",
+   "Möhren, Sellerie,Kartoffeln.Porree,Zwiebeln, Butter,Gemüdebrühe, Sahne, Creme-fraich",
+   "Zwiebeln, Knoblauch, Olievenöl, Stückige Tomaten, Paprika, Gemüsebrühe, Basilikum, Majoram, Thymian, Hänchenbrust, Nudeln, Stärke, Sahne",
+   "Kartoffeln, Zwiebeln, Zitronensaft, Stärke, Haferflocken, Ei, ÖL, evtl. Mehl",
+   "Paniermehl, Zwiebeln, Ei, Hackfleich, Brühe, Kartoffeln, Sahne, Zitronensaft,Mehl",
+   "Lorberblätter, Hähnchen, TK-Mischgemüse,Butter,Mehl,Sahne,Hühnerbrühe,Sojasoße,Worcestersoße,Estragon(optional)",
+   "Knoblauch,Lauch,Möhren,Weißkohl,Rote Papika,Öl, Putenbrust,Zitronensaft, Sojasoße, Misopaste, Sambal oelek, China Nudeln",
+   "gelbe Paprika,Sahne, Gemüsebrühe, Tomatenmark, Kartoffeln, TK-Mischgemüse, Kräuterbutter, Putenbrust",
+   "ÖL, Zwiebeln,Putenbrust,Pfirsiche Dose,Gemüsebrühe,Chili,Curry,Reis, Stärke",
+   "Mehl,Milch,Hefe,Gouda,Knoblauch,Saure Sahne,Creme-fraich,Zitronensaft,ÖL,Schinkenwürfel,Frühlingszwiebel"
    ]
 
 
